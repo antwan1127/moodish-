@@ -61,9 +61,7 @@ export function ProductGrid({ products }: ProductGridProps) {
     })
   }
 
-  const handleSizeChange = (productId: string, size: string, e: React.MouseEvent) => {
-    e.preventDefault()
-    e.stopPropagation()
+  const handleSizeChange = (productId: string, size: string) => {
     setSelectedSizes((prev) => ({ ...prev, [productId]: size }))
   }
 
@@ -101,7 +99,7 @@ export function ProductGrid({ products }: ProductGridProps) {
                   <p className="text-gray-600 mb-4 text-sm line-clamp-2">{product.description}</p>
                 )}
 
-                <div className="space-y-4" onClick={(e) => e.preventDefault()}>
+                <div className="space-y-4" onClick={(e) => e.stopPropagation()}>
                   <Select
                     onValueChange={(value) => handleSizeChange(product.id, value)}
                     disabled={allSizesUnavailable}

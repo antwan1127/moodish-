@@ -39,11 +39,10 @@ export default function HomePage() {
             {/* Women's Collection */}
             <Link href="/women" className="group">
               <div className="relative overflow-hidden rounded-lg aspect-[4/5] bg-gray-100">
-                <Image
-                  src="/images/fashion-placeholder.svg"
+                <img
+                  src="/images/women-home.svg"
                   alt="Women's Collection"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="object-cover group-hover:scale-105 transition-transform duration-300 h-full w-full"
                 />
                 <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300"></div>
                 <div className="absolute bottom-8 left-8 text-white">
@@ -56,11 +55,10 @@ export default function HomePage() {
             {/* Men's Collection */}
             <Link href="/men" className="group">
               <div className="relative overflow-hidden rounded-lg aspect-[4/5] bg-gray-100">
-                <Image
-                  src="/images/fashion-placeholder.svg"
+                <img
+                  src="/images/men-home.svg"
                   alt="Men's Collection"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="object-cover group-hover:scale-105 transition-transform duration-300 h-full w-full"
                 />
                 <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300"></div>
                 <div className="absolute bottom-8 left-8 text-white">
