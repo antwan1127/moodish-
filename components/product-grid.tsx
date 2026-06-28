@@ -47,7 +47,7 @@ export function ProductGrid({ products }: ProductGridProps) {
     }
 
     addItem({
-      id: product.id,
+      id: `${product.id}-${selectedSize}`,
       name: product.name,
       price: product.price,
       image: product.image,
@@ -78,7 +78,7 @@ export function ProductGrid({ products }: ProductGridProps) {
             <Card className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
               <div className="aspect-[3/4] relative">
                 <Image
-                  src={product.image || "/placeholder.svg"}
+                  src={product.image || "/images/fashion-placeholder.svg"}
                   alt={product.name}
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-300"
@@ -103,7 +103,7 @@ export function ProductGrid({ products }: ProductGridProps) {
 
                 <div className="space-y-4" onClick={(e) => e.preventDefault()}>
                   <Select
-                    onValueChange={(value) => handleSizeChange(product.id, value, {} as React.MouseEvent)}
+                    onValueChange={(value) => handleSizeChange(product.id, value)}
                     disabled={allSizesUnavailable}
                   >
                     <SelectTrigger onClick={(e) => e.stopPropagation()}>

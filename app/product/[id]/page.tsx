@@ -5,8 +5,9 @@ import { womenProductsPage1, womenProductsPage2, menProductsPage1, menProductsPa
 // Combine all products
 const allProducts = [...womenProductsPage1, ...womenProductsPage2, ...menProductsPage1, ...menProductsPage2]
 
-export default function ProductPage({ params }: { params: { id: string } }) {
-  const product = allProducts.find((p) => p.id === params.id)
+export default async function ProductPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const product = allProducts.find((p) => p.id === id)
 
   if (!product) {
     notFound()

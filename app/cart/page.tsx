@@ -36,12 +36,12 @@ export default function CartPage() {
 
         <div className="space-y-4 mb-8">
           {items.map((item) => (
-            <Card key={`${item.id}-${item.size}`}>
+            <Card key={item.id}>
               <CardContent className="p-6">
                 <div className="flex items-center space-x-4">
                   <div className="w-20 h-20 relative">
                     <Image
-                      src={item.image || "/placeholder.svg"}
+                      src={item.image || "/images/fashion-placeholder.svg"}
                       alt={item.name}
                       fill
                       className="object-cover rounded"
@@ -58,7 +58,7 @@ export default function CartPage() {
                     <Button
                       variant="outline"
                       size="icon"
-                      onClick={() => updateQuantity(`${item.id}-${item.size}`, item.quantity - 1)}
+                      onClick={() => updateQuantity(item.id, item.quantity - 1)}
                     >
                       <Minus className="h-4 w-4" />
                     </Button>
@@ -66,13 +66,13 @@ export default function CartPage() {
                     <Button
                       variant="outline"
                       size="icon"
-                      onClick={() => updateQuantity(`${item.id}-${item.size}`, item.quantity + 1)}
+                      onClick={() => updateQuantity(item.id, item.quantity + 1)}
                     >
                       <Plus className="h-4 w-4" />
                     </Button>
                   </div>
 
-                  <Button variant="outline" size="icon" onClick={() => removeItem(`${item.id}-${item.size}`)}>
+                  <Button variant="outline" size="icon" onClick={() => removeItem(item.id)}>
                     <Trash2 className="h-4 w-4" />
                   </Button>
                 </div>

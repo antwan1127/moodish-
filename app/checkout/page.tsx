@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -17,6 +17,12 @@ export default function CheckoutPage() {
   const { toast } = useToast()
   const router = useRouter()
   const [isSubmitting, setIsSubmitting] = useState(false)
+
+  useEffect(() => {
+    if (items.length === 0) {
+      router.replace("/cart")
+    }
+  }, [items.length, router])
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -67,7 +73,6 @@ export default function CheckoutPage() {
   }
 
   if (items.length === 0) {
-    router.push("/cart")
     return null
   }
 

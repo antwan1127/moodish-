@@ -3,9 +3,10 @@ import { ProductGrid } from "@/components/product-grid"
 import { Pagination } from "@/components/pagination"
 import { menProductsPage1, menProductsPage2 } from "@/lib/products"
 
-export default function MenPage({ searchParams }: { searchParams: { page?: string } }) {
-  const page = Number(searchParams.page) || 1
-  const products = page === 2 ? menProductsPage2 : menProductsPage1
+export default async function MenPage({ searchParams }: { searchParams: Promise<{ page?: string }> }) {
+  const { page } = await searchParams
+  const currentPage = Number(page) || 1
+  const products = currentPage === 2 ? menProductsPage2 : menProductsPage1
   const totalPages = 2
 
   return (
@@ -18,7 +19,7 @@ export default function MenPage({ searchParams }: { searchParams: { page?: strin
 
         <Suspense fallback={<div>Loading products...</div>}>
           <ProductGrid products={products} />
-          <Pagination currentPage={page} totalPages={totalPages} basePath="/men" />
+          <Pagination currentPage={currentPage} totalPages={totalPages} basePath="/men" />
         </Suspense>
       </div>
     </div>

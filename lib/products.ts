@@ -15,7 +15,7 @@ export const womenProductsPage1: Product[] = [
     id: "w1",
     name: "Elegant Midi Dress",
     price: 89.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "women",
     sizes: ["XS", "S", "M", "L", "XL"],
     unavailableSizes: ["XS", "XL"], // Example: XS and XL are out of stock
@@ -26,7 +26,7 @@ export const womenProductsPage1: Product[] = [
     id: "w2",
     name: "Classic Blazer",
     price: 129.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "women",
     sizes: ["XS", "S", "M", "L", "XL"],
     unavailableSizes: ["L"], // Example: L is out of stock
@@ -37,7 +37,7 @@ export const womenProductsPage1: Product[] = [
     id: "w3",
     name: "Silk Blouse",
     price: 79.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "women",
     sizes: ["XS", "S", "M", "L", "XL"],
     description:
@@ -47,7 +47,7 @@ export const womenProductsPage1: Product[] = [
     id: "w4",
     name: "High-Waist Trousers",
     price: 99.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "women",
     sizes: ["XS", "S", "M", "L", "XL"],
     unavailableSizes: ["S", "M"], // Example: S and M are out of stock
@@ -58,7 +58,7 @@ export const womenProductsPage1: Product[] = [
     id: "w5",
     name: "Cashmere Sweater",
     price: 159.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "women",
     sizes: ["XS", "S", "M", "L", "XL"],
     description:
@@ -68,7 +68,7 @@ export const womenProductsPage1: Product[] = [
     id: "w6",
     name: "Designer Handbag",
     price: 199.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "women",
     sizes: ["One Size"],
     description:
@@ -82,7 +82,7 @@ export const womenProductsPage2: Product[] = [
     id: "w7",
     name: "Summer Maxi Dress",
     price: 75.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "women",
     sizes: ["XS", "S", "M", "L", "XL"],
     description:
@@ -92,7 +92,7 @@ export const womenProductsPage2: Product[] = [
     id: "w8",
     name: "Leather Jacket",
     price: 249.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "women",
     sizes: ["XS", "S", "M", "L", "XL"],
     unavailableSizes: ["XS", "S", "XL"], // Example: Multiple sizes out of stock
@@ -103,7 +103,7 @@ export const womenProductsPage2: Product[] = [
     id: "w9",
     name: "Pleated Skirt",
     price: 69.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "women",
     sizes: ["XS", "S", "M", "L", "XL"],
     description:
@@ -113,7 +113,7 @@ export const womenProductsPage2: Product[] = [
     id: "w10",
     name: "Knit Cardigan",
     price: 89.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "women",
     sizes: ["XS", "S", "M", "L", "XL"],
     description:
@@ -123,7 +123,7 @@ export const womenProductsPage2: Product[] = [
     id: "w11",
     name: "Statement Earrings",
     price: 45.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "women",
     sizes: ["One Size"],
     description:
@@ -133,7 +133,7 @@ export const womenProductsPage2: Product[] = [
     id: "w12",
     name: "Ankle Boots",
     price: 149.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "women",
     sizes: ["36", "37", "38", "39", "40", "41"],
     unavailableSizes: ["36", "41"], // Example: Smallest and largest sizes out of stock
@@ -148,7 +148,7 @@ export const menProductsPage1: Product[] = [
     id: "m1",
     name: "Classic Suit Jacket",
     price: 199.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "men",
     sizes: ["S", "M", "L", "XL", "XXL"],
     unavailableSizes: ["S", "XXL"], // Example: S and XXL are out of stock
@@ -159,7 +159,7 @@ export const menProductsPage1: Product[] = [
     id: "m2",
     name: "Cotton Dress Shirt",
     price: 69.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "men",
     sizes: ["S", "M", "L", "XL", "XXL"],
     description:
@@ -169,7 +169,7 @@ export const menProductsPage1: Product[] = [
     id: "m3",
     name: "Leather Jacket",
     price: 299.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "men",
     sizes: ["S", "M", "L", "XL", "XXL"],
     unavailableSizes: ["M"], // Example: M is out of stock
@@ -180,7 +180,7 @@ export const menProductsPage1: Product[] = [
     id: "m4",
     name: "Chino Pants",
     price: 79.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "men",
     sizes: ["30", "32", "34", "36", "38"],
     description:
@@ -190,7 +190,7 @@ export const menProductsPage1: Product[] = [
     id: "m5",
     name: "Wool Sweater",
     price: 119.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "men",
     sizes: ["S", "M", "L", "XL", "XXL"],
     unavailableSizes: ["L", "XL"], // Example: L and XL are out of stock
@@ -201,7 +201,7 @@ export const menProductsPage1: Product[] = [
     id: "m6",
     name: "Oxford Shoes",
     price: 149.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "men",
     sizes: ["8", "9", "10", "11", "12"],
     description:
@@ -215,7 +215,7 @@ export const menProductsPage2: Product[] = [
     id: "m7",
     name: "Denim Jacket",
     price: 129.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "men",
     sizes: ["S", "M", "L", "XL", "XXL"],
     description:
@@ -225,7 +225,7 @@ export const menProductsPage2: Product[] = [
     id: "m8",
     name: "Slim Fit Jeans",
     price: 89.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "men",
     sizes: ["30", "32", "34", "36", "38"],
     unavailableSizes: ["30", "38"], // Example: Smallest and largest sizes out of stock
@@ -236,7 +236,7 @@ export const menProductsPage2: Product[] = [
     id: "m9",
     name: "Polo Shirt",
     price: 59.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "men",
     sizes: ["S", "M", "L", "XL", "XXL"],
     description:
@@ -246,7 +246,7 @@ export const menProductsPage2: Product[] = [
     id: "m10",
     name: "Bomber Jacket",
     price: 169.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "men",
     sizes: ["S", "M", "L", "XL", "XXL"],
     unavailableSizes: ["S", "M", "XXL"], // Example: Multiple sizes out of stock
@@ -257,7 +257,7 @@ export const menProductsPage2: Product[] = [
     id: "m11",
     name: "Leather Belt",
     price: 49.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "men",
     sizes: ["S", "M", "L", "XL"],
     description:
@@ -267,7 +267,7 @@ export const menProductsPage2: Product[] = [
     id: "m12",
     name: "Casual Sneakers",
     price: 109.99,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/images/fashion-placeholder.svg",
     category: "men",
     sizes: ["8", "9", "10", "11", "12"],
     unavailableSizes: ["8", "12"], // Example: Smallest and largest sizes out of stock

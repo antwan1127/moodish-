@@ -40,7 +40,7 @@ export default function HomePage() {
             <Link href="/women" className="group">
               <div className="relative overflow-hidden rounded-lg aspect-[4/5] bg-gray-100">
                 <Image
-                  src="/placeholder.svg?height=600&width=480"
+                  src="/images/fashion-placeholder.svg"
                   alt="Women's Collection"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -57,7 +57,7 @@ export default function HomePage() {
             <Link href="/men" className="group">
               <div className="relative overflow-hidden rounded-lg aspect-[4/5] bg-gray-100">
                 <Image
-                  src="/placeholder.svg?height=600&width=480"
+                  src="/images/fashion-placeholder.svg"
                   alt="Men's Collection"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"

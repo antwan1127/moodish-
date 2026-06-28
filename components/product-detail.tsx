@@ -44,7 +44,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
 
     for (let i = 0; i < quantity; i++) {
       addItem({
-        id: product.id,
+        id: `${product.id}-${selectedSize}`,
         name: product.name,
         price: product.price,
         image: product.image,
@@ -85,7 +85,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
           <div className="space-y-4">
             <div className="aspect-[3/4] relative bg-gray-100 rounded-lg overflow-hidden">
               <Image
-                src={product.image || "/placeholder.svg"}
+                src={product.image || "/images/fashion-placeholder.svg"}
                 alt={product.name}
                 fill
                 className="object-cover"
@@ -106,7 +106,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
               {[1, 2, 3, 4].map((i) => (
                 <div key={i} className="aspect-square relative bg-gray-100 rounded-lg overflow-hidden opacity-50">
                   <Image
-                    src={product.image || "/placeholder.svg"}
+                    src={product.image || "/images/fashion-placeholder.svg"}
                     alt={`${product.name} view ${i}`}
                     fill
                     className="object-cover"
